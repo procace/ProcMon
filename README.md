@@ -30,6 +30,6 @@ To enable boot logging, configure ProcMon to start capturing events on the next 
 
 A common scenario involves identifying why a service fails to start. By analyzing boot logs, you can trace the sequence of operations leading up to the failure, such as missing registry entries or inaccessible configuration files. Another use case is performance analysis, where you can detect delays caused by excessive disk I/O or repeated access attempts to unavailable resources.
 
-ProcMon includes support for backing files, enabling continuous event logging without consuming excessive system memory. This makes it well-suited for extended monitoring in production environments. With accurate timestamps, it also allows precise correlation between system activity and user-reported problems.
+ProcMon can write data to backing files, allowing uninterrupted logging while avoiding memory exhaustion. This capability is particularly valuable for long-running monitoring tasks in production systems. Detailed timestamps further enhance its usefulness by helping align system events with reported user issues.
 
-Additionally, boot logging offers insight into system behavior during early startup stages, where conventional tools provide little visibility, making it a critical feature for advanced troubleshooting.
+Moreover, boot logging reveals system activity during initial startup phases, when most standard tools are ineffective, making it essential for in-depth diagnostics.
